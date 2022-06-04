@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Blue Goblet Bold";
+  src: local("Blue Goblet Bold"), url(./fonts/BlueGobletBold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Blue Goblet Regular";
+  src: local("Blue Goblet Regular"), url(./fonts/BlueGobletRegular.ttf) format("truetype");
+}
+
+.flex {
+  display: flex;
+}

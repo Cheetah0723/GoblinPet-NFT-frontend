@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -14,12 +15,11 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-image: url("../public/img/main-bg.png");
+  background-size: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -28,11 +28,184 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Main part */
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Blue Goblet Regular";
+  color: black;
+  margin: 0;
+  font-size: 28px;
+}
+
+span {
+  font-weight: bold;
+}
+
+hr {
+  height: 1px;
+  background-color: black;
+}
+
+button {
+  background-color: transparent;
+  font-size: 30px;
+  width:40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 100px;
+  line-height: 100%;
+  align-items: center;
+  margin: 40px 0 30px 0;
+}
+
+.phone {
+  background-image: url("../public/img/Phone.png");
+  background-repeat: no-repeat;
+  width: 309px;
+  height: 457px;
+  margin-right: 0px;
+  margin-right: 60px;
+  text-align: left;
+}
+
+.phone-main {
+  margin: 50px 40px 0 40px;
+}
+
+.mint {
+  background-image: url("../public/img/button.png");
+  background-size: 100%;
+  padding: 10px 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.mint-select {
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.mint p{
+  text-align: center;
+  font-size: 50px;
+}
+
+.mint-supply {
+  text-align: center;
+}
+
+.content {
+  margin: 40px 0 0;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: white;
+  width: 460px;
+  padding: 20px 25px;
+  text-align: left;
+}
+
+.images {
+  margin-top: 20px;
+}
+
+.apes {
+  z-index: 1;
+}
+
+.apes img {
+  width: 389px;
+  height: 305px;
+}
+
+.apes img {
+  margin: 0 5px;
+}
+
+.land {
+  z-index: 2;
+  margin: -30px 0 0;
+}
+.contacts {
+  position: fixed;
+  top: 50px;
+  right: 10%;
+}
+
+.contacts img {
+  margin:  0 15px;
+}
+
+@media (max-width: 1600px) {
+  #ape4 {
+    display: none
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 1200px) {
+  #ape2 {
+    display: none
+  }
+  .contacts {
+    right: 20px;
+  }
+}
+
+@media (max-width: 930px) {
+  .contacts {
+    position: relative;
+    margin: 0 0 50px 0;
+  }
+
+  .phone {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 830px) {
+  #ape1 {
+    display: none
+  }
+  
+  .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mint-select {
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+
+  .phone {
+    background: none;
+    height: auto;
+    margin: 0;
+  }
+  .phone-content {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .content{
+    width: auto;
+    margin: 20px;
+  } 
+}
+
+@media (max-width: 420px) {
+  .title {
+    font-size: 70px;
+  }
+
+  .apes img {
+    width: 270px;
+    height: 215px;
   }
 }
